@@ -1,1 +1,2 @@
 # first-repostiroy
+## git config
