@@ -4,13 +4,14 @@ from random import randrange
 
 class FunnyDice:
     def __init__(self, n=6):
-        # MARK: Safety code
+        # MARK: Safety code - 주사위의 최소 눈의 값은 1으로 하고, 다른 형태의 자료형을 입력받는다고 하더라도 강제로 int형으로 변형하여 진행이 되게끔 합니다.
         n = int(n)
         if (n < 1):
             n = 1
         
         self.n = n
-    
+
+    # METHOD: throw - 설정한 주사위의 눈의 최대 값
     def throw(self):
         self.val = randrange(0, self.n) + 1
     
