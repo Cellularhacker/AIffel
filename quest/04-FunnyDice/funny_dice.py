@@ -1,3 +1,5 @@
+from random import randrange
+
 # Q. n면체 주사위 위젯의 전체 코드를 작성해봅시다.
 
 class FunnyDice:
